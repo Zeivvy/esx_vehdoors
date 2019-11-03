@@ -24,7 +24,7 @@ function CloseDoor(doors) --doors = doors game id
 
 	local playerPed = GetPlayerPed(-1) --Getting Player Ped
 	if ( IsPedSittingInAnyVehicle( playerPed ) ) then --Checking If Player Is Sitting In Any Vehicle
-		local playerVeh = GetVehiclePedIsIn(playerPed, false --Getting Player Vehicle
+		local playerVeh = GetVehiclePedIsIn(playerPed, false) --Getting Player Vehicle
        if GetVehicleDoorAngleRatio(playerVeh, doors) > 0.0 then --Checking Angle Ratio Of Hood 
           SetVehicleDoorShut(playerVeh, doors, false) --Shutting The Doors             
         else
